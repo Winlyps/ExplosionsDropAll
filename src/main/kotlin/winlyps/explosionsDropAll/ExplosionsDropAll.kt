@@ -1,0 +1,14 @@
+package winlyps.explosionsDropAll
+
+import org.bukkit.plugin.java.JavaPlugin
+
+class ExplosionsDropAll : JavaPlugin() {
+
+    override fun onEnable() {
+        // Plugin startup logic
+    }
+
+    override fun onDisable() {
+        // Plugin shutdown logic
+    }
+}
