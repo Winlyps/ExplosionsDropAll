@@ -8,6 +8,8 @@ class ExplosionsDropAll : JavaPlugin() {
         // Plugin startup logic
         server.worlds.forEach { world ->
             world.setGameRuleValue("blockExplosionDropDecay", "false")
+            world.setGameRuleValue("mobExplosionDropDecay", "false")
+
         }
         logger.info("ExplosionsDropAll plugin has been enabled.")
     }
