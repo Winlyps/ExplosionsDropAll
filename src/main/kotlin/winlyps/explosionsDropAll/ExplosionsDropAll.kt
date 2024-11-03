@@ -16,6 +16,10 @@ class ExplosionsDropAll : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("ExplosionsDropAll plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("blockExplosionDropDecay", "true")
+            world.setGameRuleValue("mobExplosionDropDecay", "true")
+            logger.info("ExplosionsDropAll plugin has been disabled.")
+        }
     }
 }
